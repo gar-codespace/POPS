@@ -3,8 +3,10 @@ FILEDATE = 20240201
 
 from django.urls import path
 
-from .views import home_screen_first
+from .views import HomeScreenFirst, AboutPage, HelpPage
 
 urlpatterns = [
-    path("", home_screen_first, name="home"),
+    path("", HomeScreenFirst.as_view(), name="home"),
+    path("about/", AboutPage.as_view(), name="about"),
+    path("help/", HelpPage.as_view(), name="help"),
 ]
