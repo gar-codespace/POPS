@@ -1,2 +1,0 @@
-print("kgg      ")
-print("hh")
